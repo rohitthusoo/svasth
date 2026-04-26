@@ -107,10 +107,10 @@ revealElements.forEach(el => revealObserver.observe(el));
 
 // Quotes Rotation
 const quotes = [
-    { text: "The body achieves what the mind believes.", author: "Napoleon Hill" },
-    { text: "Rise. Do not yield. The battle begins within you.", author: "Bhagavad Gita" },
-    { text: "Strength is not a gift. It is a discipline built daily.", author: "Ancient Wisdom" },
-    { text: "Your only limit is the one you set yourself.", author: "Svasth" }
+    { text: "You have the right to work, but never to the fruit of work.", author: "Bhagavad Gita" },
+    { text: "When meditation is mastered, the mind is unwavering like the flame of a lamp in a windless place.", author: "Bhagavad Gita" },
+    { text: "The mind acts like an enemy for those who do not control it.", author: "Bhagavad Gita" },
+    { text: "Reshape yourself through the power of your will; never let yourself be degraded by self-will.", author: "Bhagavad Gita" }
 ];
 
 const quoteContainer = document.getElementById('quote-slides');

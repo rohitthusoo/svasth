@@ -560,6 +560,49 @@ select.form-control {
     box-shadow: 0 0 10px var(--accent-orange);
 }
 
+/* Stories Layout & Image */
+.stories-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.stories-image {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8), 0 0 30px var(--accent-orange-glow);
+    border: 1px solid var(--glass-border);
+}
+
+.epic-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.stories-image:hover .epic-img {
+    transform: scale(1.05);
+}
+
+@media (min-width: 1200px) {
+    .stories-layout {
+        flex-direction: row;
+        align-items: center;
+    }
+    .stories-image {
+        flex: 1;
+    }
+    .stories-grid {
+        flex: 1;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+}
+
 /* Stories (3D Flip Cards) */
 .stories-grid {
     display: grid;
