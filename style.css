@@ -156,6 +156,22 @@ nav.scrolled {
     width: 100%;
 }
 
+.nav-email-btn {
+    border: 1px solid var(--accent-orange);
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    color: var(--accent-orange) !important;
+}
+
+.nav-email-btn::after {
+    display: none;
+}
+
+.nav-email-btn:hover {
+    background-color: rgba(221, 89, 0, 0.1);
+    box-shadow: 0 0 15px rgba(221, 89, 0, 0.3);
+}
+
 /* Hero Section */
 .hero {
     min-height: 100vh;
@@ -798,4 +814,44 @@ footer {
     .bmi-container { padding: 2rem; }
     .download-section h2 { font-size: 3rem; }
     footer { flex-direction: column; text-align: center; gap: 1rem; }
+}
+
+/* Floating Email Button */
+.floating-email-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--accent-orange);
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    box-shadow: 0 10px 30px rgba(221, 89, 0, 0.4);
+    z-index: 1000;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.floating-email-btn .icon {
+    font-size: 1.5rem;
+}
+
+.floating-email-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(221, 89, 0, 0.6);
+    background: #e66b1a;
+}
+
+@media (max-width: 768px) {
+    .floating-email-btn {
+        bottom: 20px;
+        right: 20px;
+        padding: 0.8rem 1.2rem;
+    }
 }
