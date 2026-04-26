@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svasth - AI-Powered Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">Svasth<span>.</span></div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#bmi">BMI</a>
+            <a href="#stories">Stories</a>
+            <a href="#download">Download</a>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+        
+        <div class="hero-content reveal">
+            <div class="badge">AI-Powered Fitness</div>
+            <h1>Your Body. Your Power.<br><span>No Limits.</span></h1>
+            <p>AI fitness coaching designed for beginners, athletes, and busy people. Unlock your true potential today.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary alert-btn">Download for iOS</button>
+                <button class="btn btn-ghost alert-btn">Get on Android</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <h2 class="section-title reveal">What We Offer</h2>
+        <div class="features-grid">
+            <div class="feature-card tilt-card reveal">
+                <div class="card-content">
+                    <h3>AI Personal Trainer</h3>
+                    <p>Real-time form detection to ensure you perform every exercise safely and effectively.</p>
+                </div>
+            </div>
+            <div class="feature-card tilt-card reveal" style="transition-delay: 100ms;">
+                <div class="card-content">
+                    <h3>Mood Workouts</h3>
+                    <p>Workouts perfectly tailored based on how you feel right now. Listen to your body.</p>
+                </div>
+            </div>
+            <div class="feature-card tilt-card reveal" style="transition-delay: 200ms;">
+                <div class="card-content">
+                    <h3>AI Nutrition Scanner</h3>
+                    <p>Snap a photo of your food and instantly get precise calorie and macro breakdowns.</p>
+                </div>
+            </div>
+            <div class="feature-card tilt-card reveal">
+                <div class="card-content">
+                    <h3>Progress Tracker</h3>
+                    <p>Weekly AI-powered photo comparisons to visually track your transformation.</p>
+                </div>
+            </div>
+            <div class="feature-card tilt-card reveal" style="transition-delay: 100ms;">
+                <div class="card-content">
+                    <h3>Challenges</h3>
+                    <p>Compete with friends and the global community to stay motivated and push limits.</p>
+                </div>
+            </div>
+            <div class="feature-card tilt-card reveal" style="transition-delay: 200ms;">
+                <div class="card-content">
+                    <h3>Injury Advisor</h3>
+                    <p>Safe, dynamically modified plans to keep you active while recovering from setbacks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bmi" class="reveal">
+        <h2 class="section-title">BMI Calculator</h2>
+        <div class="bmi-container glass-card glowing-border">
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Weight</label>
+                    <input type="number" id="bmi-weight" class="form-control" placeholder="Enter weight">
+                </div>
+                <div class="form-group">
+                    <label>Unit</label>
+                    <select id="bmi-unit" class="form-control">
+                        <option value="kg">kg</option>
+                        <option value="lbs">lbs</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Height (cm)</label>
+                    <input type="number" id="bmi-height" class="form-control" placeholder="Enter height">
+                </div>
+                <div class="form-group">
+                    <label>Age</label>
+                    <input type="number" id="bmi-age" class="form-control" placeholder="Enter age">
+                </div>
+            </div>
+            <button class="btn btn-primary bmi-btn" id="calculate-btn">Calculate BMI</button>
+            
+            <div id="bmi-result" class="bmi-result">
+                <h3>Your BMI: <span id="bmi-score"></span></h3>
+                <div class="bmi-category-badge" id="bmi-category"></div>
+                <div class="progress-bar">
+                    <div id="bmi-progress-fill" class="progress-fill"></div>
+                </div>
+                <p id="bmi-tip"></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="quotes" class="quotes-section reveal">
+        <div class="quote-container" id="quote-slides">
+            <!-- Quotes dynamically added -->
+        </div>
+        <div class="quote-dots" id="quote-dots">
+            <!-- Dots dynamically added -->
+        </div>
+    </section>
+
+    <section id="stories">
+        <h2 class="section-title reveal">Ancient Wisdom</h2>
+        <div class="stories-grid">
+            <div class="story-card flip-card reveal">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front glass-card">
+                        <h3>Arjuna & Krishna</h3>
+                        <p class="subtitle">Bhagavad Gita</p>
+                        <div class="flip-icon">Flip ↻</div>
+                    </div>
+                    <div class="flip-card-back glass-card">
+                        <p>A timeless Bhagavad Gita story about fighting the battle within yourself and conquering doubt to discover true purpose.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="story-card flip-card reveal" style="transition-delay: 100ms;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front glass-card">
+                        <h3>Bhima</h3>
+                        <p class="subtitle">Mahabharata</p>
+                        <div class="flip-icon">Flip ↻</div>
+                    </div>
+                    <div class="flip-card-back glass-card">
+                        <p>A powerful tale embodying the immense discipline and raw physical strength required to succeed.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="story-card flip-card reveal" style="transition-delay: 200ms;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front glass-card">
+                        <h3>Vedic Philosophy</h3>
+                        <p class="subtitle">Kshetra</p>
+                        <div class="flip-icon">Flip ↻</div>
+                    </div>
+                    <div class="flip-card-back glass-card">
+                        <p>Understanding your physical body as a sacred field (Kshetra) that must be nurtured, purified, and protected.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="story-card flip-card reveal" style="transition-delay: 300ms;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front glass-card">
+                        <h3>Hanuman Shakti</h3>
+                        <p class="subtitle">Ramayana</p>
+                        <div class="flip-icon">Flip ↻</div>
+                    </div>
+                    <div class="flip-card-back glass-card">
+                        <p>An epic demonstrating that the greatest and most boundless strength is the one awakened from within.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download-section reveal">
+        <div class="floating-shape shape-4"></div>
+        <div class="floating-shape shape-5"></div>
+        <div class="download-content">
+            <h2>Start Your Journey Today, Warrior.</h2>
+            <div class="hero-buttons">
+                <button class="btn btn-primary alert-btn">App Store</button>
+                <button class="btn btn-ghost alert-btn">Google Play</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-left">© 2026 Svasth. All rights reserved.</div>
+        <div class="footer-right">Built with AI. Inspired by Warriors.</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
