@@ -1,8 +1,8 @@
 :root {
     --bg-dark: #080808;
     --bg-darker: #050505;
-    --accent-orange: #ff6600;
-    --accent-orange-glow: rgba(255, 102, 0, 0.4);
+    --accent-orange: #dd5900;
+    --accent-orange-glow: rgba(221, 89, 0, 0.4);
     --text-light: #f5f5f5;
     --text-muted: #a0a0a0;
     --card-bg: rgba(25, 25, 25, 0.6);
@@ -176,7 +176,7 @@ nav.scrolled {
 .badge {
     display: inline-block;
     padding: 0.5rem 1.5rem;
-    background: rgba(255, 102, 0, 0.1);
+    background: rgba(221, 89, 0, 0.1);
     border: 1px solid var(--accent-orange-glow);
     color: var(--accent-orange);
     border-radius: 50px;
@@ -186,7 +186,7 @@ nav.scrolled {
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 2rem;
-    box-shadow: 0 0 20px rgba(255, 102, 0, 0.2);
+    box-shadow: 0 0 20px rgba(221, 89, 0, 0.2);
 }
 
 .hero h1 {
@@ -228,13 +228,13 @@ nav.scrolled {
 .btn-primary {
     background: var(--accent-orange);
     color: #fff;
-    box-shadow: 0 10px 30px rgba(255, 102, 0, 0.4);
+    box-shadow: 0 10px 30px rgba(221, 89, 0, 0.4);
 }
 
 .btn-primary:hover {
     transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 15px 40px rgba(255, 102, 0, 0.6);
-    background: #ff771a;
+    box-shadow: 0 15px 40px rgba(221, 89, 0, 0.6);
+    background: #e66b1a;
 }
 
 .btn-ghost {
@@ -283,7 +283,7 @@ nav.scrolled {
 .shape-3 {
     width: 200px;
     height: 200px;
-    background: #ff9900;
+    background: #e68a00;
     top: 40%;
     left: 50%;
     animation-delay: -2s;
@@ -418,8 +418,8 @@ nav.scrolled {
 .form-control:focus {
     outline: none;
     border-color: var(--accent-orange);
-    box-shadow: 0 0 15px rgba(255, 102, 0, 0.2);
-    background: rgba(255, 102, 0, 0.05);
+    box-shadow: 0 0 15px rgba(221, 89, 0, 0.2);
+    background: rgba(221, 89, 0, 0.05);
 }
 
 select.form-control {
@@ -648,7 +648,7 @@ select.form-control {
 
 .flip-card:hover .flip-card-front,
 .flip-card:hover .flip-card-back {
-    box-shadow: 0 20px 50px rgba(0,0,0,0.8), 0 0 20px rgba(255, 102, 0, 0.2);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8), 0 0 20px rgba(221, 89, 0, 0.2);
 }
 
 .flip-card-front {
@@ -681,7 +681,7 @@ select.form-control {
     transform: rotateY(180deg);
     background: linear-gradient(135deg, rgba(25,25,25,0.9), rgba(10,10,10,0.9));
     border-color: var(--accent-orange);
-    box-shadow: 0 0 30px rgba(255, 102, 0, 0.2);
+    box-shadow: 0 0 30px rgba(221, 89, 0, 0.2);
 }
 
 .flip-card-back p {
