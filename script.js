@@ -191,19 +191,19 @@ function calculateBMI() {
     if (bmi < 18.5) {
         category = "Underweight";
         color = "#3498db"; // blue
-        tip = "Focus on nutrient-dense foods to build healthy mass safely.";
+        tip = "No worries! Download the Svasth app—it will help make you healthier and build healthy mass safely.";
     } else if (bmi >= 18.5 && bmi <= 24.9) {
-        category = "Healthy";
+        category = "Fit";
         color = "#2ecc71"; // green
-        tip = "Great job! Maintain your balanced lifestyle.";
+        tip = "You are fit, but you don't have to stop here! Use the Svasth app to push your limits. Download the app!";
     } else if (bmi >= 25 && bmi <= 29.9) {
         category = "Overweight";
         color = "#f39c12"; // orange
-        tip = "Incorporate more cardiovascular exercises and balanced portions.";
+        tip = "No worries! Download the Svasth app—it will motivate you, track your progress, and help make you healthier.";
     } else {
         category = "Obese";
         color = "#e74c3c"; // red
-        tip = "Consult a healthcare provider for a personalized plan.";
+        tip = "No worries! Download the Svasth app—it will guide you step-by-step to help make you healthier.";
     }
 
     // Visual cap for progress bar
